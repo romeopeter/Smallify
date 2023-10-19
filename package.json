@@ -1,0 +1,32 @@
+{
+  "name": "Smallify",
+  "productName": "Smallify",
+  "version": "1.0.0",
+  "description": "image resize png dimension jpeg png jpg memory fast",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron --trace-warning ./src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romeopeter/Smallify.git"
+  },
+  "keywords": [
+    "image",
+    "resizer"
+  ],
+  "author": "Romeo Peter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romeopeter/Smallify/issues"
+  },
+  "homepage": "https://github.com/romeopeter/Smallify#readme",
+  "devDependencies": {
+    "electron": "^27.0.0"
+  },
+  "dependencies": {
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}
