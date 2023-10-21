@@ -54,17 +54,17 @@ function resizeImage(e) {
   const width = widthInput.value;
   const height = heightInput.value;
 
-  ipcRenderer.send('image:resize', {
-    imgPath,
-    height,
-    width,
-  });
+  // ipcRenderer.send('image:resize', {
+  //   imgPath,
+  //   height,
+  //   width,
+  // });
 }
 
 // When done, show message
-ipcRenderer.on('image:done', () =>
-  alertSuccess(`Image resized to ${heightInput.value} x ${widthInput.value}`)
-);
+// ipcRenderer.on('image:done', () =>
+//   alertSuccess(`Image resized to ${heightInput.value} x ${widthInput.value}`)
+// );
 
 function alertSuccess(message) {
   Toastify.toast({
@@ -96,3 +96,5 @@ function alertError(message) {
 img.addEventListener('change', loadImage);
 // Form submit listener
 form.addEventListener('submit', resizeImage);
+
+console.log("test");
