@@ -154,4 +154,7 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/node,react
+.hintrc
+.vscode
+todo.txt
+# End of https://www.toptal.com/developers/gitignore/api/node,reacttodo.txt
