@@ -3,10 +3,12 @@
   "productName": "Smallify",
   "version": "1.0.0",
   "description": "image resize png dimension jpeg png jpg memory fast",
-  "main": "main.js",
+  "main": "dist/main/main.js",
   "scripts": {
-    "start":"electron --trace-warning ./src/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"electron-vite dev --watch",
+    "_comment": "// serve electron app to preview production build",
+    "serve": "electron-vite preview",
+    "build": "electron-vite build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,8 @@
   },
   "homepage": "https://github.com/romeopeter/Smallify#readme",
   "devDependencies": {
-    "electron": "^27.0.0"
+    "electron": "^27.0.0",
+    "electron-vite": "^1.0.28"
   },
   "dependencies": {
     "resize-img": "^2.0.0",
