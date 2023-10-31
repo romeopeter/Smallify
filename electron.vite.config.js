@@ -1,12 +1,13 @@
 // Electron-vite configuration
 import { defineConfig } from "electron-vite";
+import { resolve } from "path";
 
 export default defineConfig({
   main: {
     build: {
       outDir: "dist/main",
       lib: {
-        entry: "./src/main.js",
+        entry: resolve("src/main.js"),
       },
     },
   },
@@ -14,16 +15,15 @@ export default defineConfig({
     build: {
       outDir: "dist/preload",
       lib: {
-        entry: "./src/script/preload.js",
+        entry: resolve("src/preload/preloadScript.js"),
       },
     },
   },
   renderer: {
-    root: "./src/renderer",
-    build: {
-      outDir: "dist/renderer",
-      // rollupOptions: { input: "./src/renderer/index.html" },
-      minify: true,
+    resolve: {
+      alias: {
+        "@renderer": resolve("src/renderer"),
+      },
     },
   },
 });
