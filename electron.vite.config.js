@@ -7,7 +7,7 @@ export default defineConfig({
     build: {
       outDir: "dist/main",
       lib: {
-        entry: resolve("src/main.js"),
+        entry: resolve("src/main/index.js"),
       },
     },
   },

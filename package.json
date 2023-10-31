@@ -3,7 +3,7 @@
   "productName": "Smallify",
   "version": "1.0.0",
   "description": "image resize png dimension jpeg png jpg memory fast",
-  "main": "dist/main/main.js",
+  "main": "dist/main/index.js",
   "scripts": {
     "start":"electron-vite dev --watch",
     "_comment": "// serve electron app to preview production build",
