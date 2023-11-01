@@ -1,3 +1,3 @@
 # Smallify 
 
-Image resizer for Mac and Windows
+Desktop app built using ElectronJS to reduce images dimension
